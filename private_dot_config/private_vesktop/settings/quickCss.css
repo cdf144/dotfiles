@@ -1,0 +1,40 @@
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css);
+
+:root {
+	--accent-hue: 228;
+	--accent-saturation: 71%;
+	--accent-lightness: 61%;
+	--accent-text-color: #fff;
+	--accent-button-action: #fff;
+
+	--avatar-radius: 100%;
+
+	--message-radius: 14px;
+	--message-padding-top: 10px;
+	--message-padding-side: 12px;
+
+	--media-radius: 6px;
+
+	--card-radius: 8px;
+	--card-radius-big: 8px;
+
+	--popout-radius: 8px;
+	--popout-radius-big: 12px;
+
+    --tooltip-font-size: 16px;
+}
+
+/* Members list sidebar width */
+.members__573eb {
+    width: 290px;
+}
+
+/* Members list sidebar elements width */
+.member_aa4760 {
+    max-width: 270px;
+}
+
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+  	display: none;
+}

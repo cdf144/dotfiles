@@ -1,0 +1,41 @@
+# Enforce SSH instead of HTTPS
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+	insteadOf = https://gitlab.com/
+[url "ssh://git@bitbucket.org/"]
+	insteadOf = https://bitbucket.org/
+[user]
+	name = Trần Đình Phú
+	email = 56244176+cdf144@users.noreply.github.com
+	signingkey = DB8EEBAF1CC2D618
+[core]
+	excludesfile = /home/darkroom/.config/git/gitignore
+[init]
+	defaultBranch = main
+[merge]
+	tool = diffview
+[fetch]
+	prune = true
+[pull]
+	rebase = true
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	ui = auto
+[color "branch"]
+	current = green bold
+	local = blue
+	remote = magenta
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = blue bold
+	branch = magenta bold
+[mergetool]
+	keepBackup = false
+[mergetool "fugitive"]
+	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+[mergetool "diffview"]
+	cmd = nvim -c \"DiffviewOpen\" \"$MERGED\"
